@@ -27,7 +27,12 @@ $basic-flex-width: $jumbotron-padding * 15;
 }
 
 header{
-    padding: $jumbotron-padding * 3 $jumbotron-padding * 3 $jumbotron-padding;
+    @media (max-width: $screen-sm-max){
+        padding: $jumbotron-padding * 2 $jumbotron-padding $jumbotron-padding;
+    }
+    @media (min-width: $screen-sm-min){
+        padding: $jumbotron-padding * 3 $jumbotron-padding * 3 $jumbotron-padding;
+    }
 }
 
 .dizajni{
@@ -81,7 +86,7 @@ header{
     justify-content: center;
 
     a{
-        margin: $jumbotron-padding / 5;
+        margin: $jumbotron-padding / 8;
         text-decoration: none;
         &:hover{
             transform: scale(1.05);

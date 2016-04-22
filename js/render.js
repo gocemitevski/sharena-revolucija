@@ -17,10 +17,10 @@ var dizajni = json_data.dizajni;
 
 // Рандомизирај листа на дизајни
 // http://stackoverflow.com/a/18650169/3190066
-dizajni.sort(function() {
-  return 0.8 - Math.random();
+dizajni.sort(function () {
+    return 0.4 - Math.random();
 });
 
 $(dizajni).each(function () {
-    $("<div class='dizajn-wrap'><a href='img/" + this.ime + "." + this.file_ext + "'><img class='dizajn-thumb img-responsive' src='img/" + this.ime + ".png'></a><h2>" + this.zasluga + "</h2></div>").insertBefore('.pechatnici');
+    $("<div class='dizajn-wrap'><a href='img/" + this.ime + "." + this.file_ext + "'><img class='dizajn-thumb img-responsive' alt='" + this.ime + "' src='img/" + this.ime + ".png'></a><h2>" + this.zasluga + "</h2></div>").insertBefore('.pechatnici');
 });
