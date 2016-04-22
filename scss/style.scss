@@ -1,0 +1,102 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700italic,400italic&subset=latin,cyrillic");
+@import "custom-variables"; // Must be before the Bootstrap stylesheets
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap";
+
+@keyframes fadeIn{
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+$basic-flex-width: $jumbotron-padding * 15;
+
+.container-fluid{
+    @media (max-width: $screen-sm-max){
+        margin-top: $jumbotron-padding/2;
+        margin-bottom: $jumbotron-padding/2;
+    }
+    @media (min-width: $screen-md-min){
+        margin-top: $jumbotron-padding * 2;
+        margin-bottom: $jumbotron-padding * 2;
+    }
+}
+
+.site-title{
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+header{
+    padding: $jumbotron-padding * 3 $jumbotron-padding * 3 $jumbotron-padding;
+}
+
+.dizajni{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.dizajn-wrap{
+
+    animation: 0.3s fadeIn ease-in-out;
+    width: $basic-flex-width;
+    margin: $jumbotron-padding;   
+
+    h2{
+        font-size: $font-size-h4 - 3;
+        font-weight: 400;
+    }
+
+    > a{
+        display: block;
+        transition: 0.1s all ease-in-out;
+        border: $padding-small-vertical solid lighten($gray-base, 80%);
+
+        &:hover{
+            border-color: $gray-dark;
+        }
+        &:active{
+            border-color: $brand-success;
+        }
+    }
+}
+
+.dizajn-thumb{
+    padding: $jumbotron-padding * 2;
+}
+
+.pechatnici{
+    @extend .dizajn-wrap;
+}
+
+.share-buttons{
+
+    margin-bottom: $jumbotron-padding;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a{
+        margin: $jumbotron-padding / 5;
+        text-decoration: none;
+        &:hover{
+            transform: scale(1.05);
+        }
+
+        &:active{
+            transform: scale(0.95);
+        }
+    }
+
+    svg{
+        width: $jumbotron-padding * 2.5;
+    }
+}
+
+footer{
+    margin: $jumbotron-padding * 2 $jumbotron-padding;
+}
