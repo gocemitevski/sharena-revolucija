@@ -24,3 +24,7 @@ dizajni.sort(function () {
 $(dizajni).each(function () {
     $("<div class='dizajn-wrap'><a href='img/" + this.ime + "." + this.file_ext + "'><img class='dizajn-thumb img-responsive' alt='" + this.ime + "' src='img/" + this.ime + ".png'></a><h2>" + this.zasluga + "</h2></div>").insertBefore('.pechatnici');
 });
+
+$('.dizajn-thumb').ready(function () {
+    $(this).fadeIn(200);
+});
