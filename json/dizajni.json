@@ -64,6 +64,16 @@
             "ime": "zoran-kardula-maica-sprej",
             "file_ext": "ai",
             "zasluga": "Зоран Кардула"
+        },
+        {
+            "ime": "nebojsa-galevski-sarena-revolucija-maica",
+            "file_ext": "pdf",
+            "zasluga": "Небојша Галевски"
+        },
+        {
+            "ime": "ruki-chuki-protestiram",
+            "file_ext": "ai",
+            "zasluga": "Руки Чуки"
         }
     ]
 }
