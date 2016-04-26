@@ -92,9 +92,25 @@
         },
         {
             "ime": "david-ristevski-sarena-revolucija-design-print",
-            "ime_png" : "david-ristevski-sarena-revolucija-design",
+            "ime_png": "david-ristevski-sarena-revolucija-design",
             "file_ext": "png",
             "zasluga": "Давид Ристевски"
+        },
+        {
+            "ime": "rosana-stamenkova-protestiram-logo-print",
+            "ime_png": "rosana-stamenkova-protestiram-logo",
+            "file_ext": "png",
+            "zasluga": "Росана Стаменкова"
+        },
+        {
+            "ime": "david-du-revolucija",
+            "file_ext": "pdf",
+            "zasluga": "Давид Ду"
+        },
+        {
+            "ime": "david-du-revolucija-2",
+            "file_ext": "pdf",
+            "zasluga": "Давид Ду"
         }
     ]
 }
