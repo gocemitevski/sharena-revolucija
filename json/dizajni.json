@@ -89,6 +89,12 @@
             "ime": "iko-ilievski-sharena-revolucija-poster",
             "file_ext": "psd",
             "zasluga": "Ико Илиевски"
+        },
+        {
+            "ime": "david-ristevski-sarena-revolucija-design-print",
+            "ime_png" : "david-ristevski-sarena-revolucija-design",
+            "file_ext": "png",
+            "zasluga": "Давид Ристевски"
         }
     ]
 }
