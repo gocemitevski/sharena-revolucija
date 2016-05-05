@@ -84,6 +84,21 @@
             "ime": "iko-ilievski-sharena-revolucija-poster",
             "file_ext": "psd",
             "zasluga": "Ико Илиевски"
+        },
+        {
+            "ime": "goce-mitevski-neposlushni-sharena-revolucija",
+            "file_ext": "pdf",
+            "zasluga": "Гоце Митевски"
+        },
+                {
+            "ime": "goce-mitevski-neposlushna-sharena-revolucija",
+            "file_ext": "pdf",
+            "zasluga": "Гоце Митевски"
+        },
+                {
+            "ime": "goce-mitevski-neposlushen-sharena-revolucija",
+            "file_ext": "pdf",
+            "zasluga": "Гоце Митевски"
         }
     ]
 }
