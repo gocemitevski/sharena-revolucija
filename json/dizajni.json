@@ -21,6 +21,11 @@
             "zasluga": "Дарко Стојановски"
         },
         {
+            "ime": "darko-stojanovski-pantone-new-protestiram-white",
+            "file_ext": "pdf",
+            "zasluga": "Дарко Стојановски"
+        },
+        {
             "ime": "goce-mitevski-ostanete-smireni-sharena-revolucija",
             "file_ext": "pdf",
             "zasluga": "Гоце Митевски"
@@ -86,16 +91,43 @@
             "zasluga": "Ико Илиевски"
         },
         {
+            "ime": "david-ristevski-sarena-revolucija-design-print",
+            "ime_png": "david-ristevski-sarena-revolucija-design",
+            "file_ext": "png",
+            "zasluga": "Давид Ристевски"
+        },
+        {
+            "ime": "rosana-stamenkova-protestiram-logo-print",
+            "ime_png": "rosana-stamenkova-protestiram-logo",
+            "file_ext": "png",
+            "zasluga": "Росана Стаменкова"
+        },
+        {
+            "ime": "david-du-revolucija",
+            "file_ext": "pdf",
+            "zasluga": "Давид Ду"
+        },
+        {
+            "ime": "david-du-revolucija-2",
+            "file_ext": "pdf",
+            "zasluga": "Давид Ду"
+        },
+        {
+            "ime": "boban-lazarevski-sharena-revolucija-maica3",
+            "file_ext": "ai",
+            "zasluga": "Бобан Лазаревски"
+        },
+        {
             "ime": "goce-mitevski-neposlushni-sharena-revolucija",
             "file_ext": "pdf",
             "zasluga": "Гоце Митевски"
         },
-                {
+        {
             "ime": "goce-mitevski-neposlushna-sharena-revolucija",
             "file_ext": "pdf",
             "zasluga": "Гоце Митевски"
         },
-                {
+        {
             "ime": "goce-mitevski-neposlushen-sharena-revolucija",
             "file_ext": "pdf",
             "zasluga": "Гоце Митевски"
