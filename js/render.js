@@ -6,6 +6,7 @@ $.get("json/dizajni.json").then(function (data) {
     var vkupno_zaslugi = [];
 
     // Издвој ги само различните имиња на автор(к)ите
+    // http://stackoverflow.com/a/17781071/3190066
     $(dizajni).each(function () {
         var ime_prezime = this.zasluga;
 
