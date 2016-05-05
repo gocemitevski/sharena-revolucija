@@ -3,7 +3,7 @@ $.get("json/dizajni.json").then(function (data) {
     var dizajni = data['dizajni'];
     var vkupno_dizajni = data['dizajni'].length;
     var zaslugi_distinct = {};
-    var vkupno_zaslugi = [];
+    var zaslugi_iminja = [];
 
     // Издвој ги само различните имиња на автор(к)ите
     // http://stackoverflow.com/a/17781071/3190066
@@ -12,7 +12,7 @@ $.get("json/dizajni.json").then(function (data) {
 
         if (!(ime_prezime in zaslugi_distinct)) {
             zaslugi_distinct[ime_prezime] = 1;
-            vkupno_zaslugi.push(ime_prezime);
+            zaslugi_iminja.push(ime_prezime);
         }
     });
 
@@ -20,10 +20,8 @@ $.get("json/dizajni.json").then(function (data) {
     $('.vkupno-dizajni').html(vkupno_dizajni);
 
     // Прикажи вкупен број на различни заслуги
-    $('.vkupno-zaslugi').html(vkupno_zaslugi.length);
-
-    console.log(vkupno_zaslugi);
-
+    $('.vkupno-zaslugi').html(zaslugi_iminja.length);
+    
     // Рандомизирај листа на дизајни
     // http://stackoverflow.com/a/18650169/3190066
     dizajni.sort(function () {
