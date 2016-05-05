@@ -24,6 +24,10 @@ $basic-flex-width: $jumbotron-padding * 15;
 .site-title{
     margin-top: 0;
     text-transform: uppercase;
+    
+    a{
+        color: inherit;
+    }
 }
 
 header{
@@ -77,8 +81,14 @@ header{
     @extend .dizajn-wrap;
 }
 
+.btn-group-designers{    
+    max-width: 50%;
+    margin: auto;    
+}
+
 .share-buttons{
 
+    margin-top: $jumbotron-padding * 2;
     margin-bottom: $jumbotron-padding;
 
     display: flex;

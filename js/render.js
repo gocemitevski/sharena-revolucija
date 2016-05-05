@@ -16,12 +16,15 @@ $.get("json/dizajni.json").then(function (data) {
         }
     });
 
+    // Подреди ги имињата на заслугите по азбучен ред
+    zaslugi_iminja.sort();
+
     // Прикажи вкупен број на различни дизајни
     $('.vkupno-dizajni').html(vkupno_dizajni);
 
     // Прикажи вкупен број на различни заслуги
     $('.vkupno-zaslugi').html(zaslugi_iminja.length);
-    
+
     // Рандомизирај листа на дизајни
     // http://stackoverflow.com/a/18650169/3190066
     dizajni.sort(function () {
@@ -43,8 +46,32 @@ $.get("json/dizajni.json").then(function (data) {
                 "<a href='img/" + this.ime + "." + this.file_ext + "'>" +
                 "<img class='dizajn-thumb img-responsive' alt='" + this.ime + "' src='img/" + img_png + ".png'>" +
                 "</a>" +
-                "<h2>" + this.zasluga + "</h2>" +
+                "<h2 class='zasluga-title'>" + this.zasluga + "</h2>" +
                 "</div>");
         thumb_el.insertBefore('.pechatnici');
+
+    });
+
+    // Додај ги имињата на дизајнер(ки)те во <select>
+    $(zaslugi_iminja).each(function (index, value) {
+        $('.btn-group-designers').append('<option class="opt-designer">' + value + '</option>');
+    });
+
+    $('.btn-group-designers').change(function (event) {
+
+        var dizajn_wrap = $('.dizajn-wrap');
+
+        dizajn_wrap.each(function () {
+
+            if ($(this).text() !== $('.btn-group-designers option:selected').text()) {
+                $(this).addClass('hidden');
+            } else {
+                $(this).removeClass('hidden');
+            }
+        });
+
+        if ($('.btn-group-designers option:selected').text() === 'Сите дизајнер(ки)') {
+            dizajn_wrap.removeClass('hidden');
+        }
     });
 });
