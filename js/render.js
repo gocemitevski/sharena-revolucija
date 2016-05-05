@@ -31,7 +31,7 @@ $.get("json/dizajni.json").then(function (data) {
         return 0.4 - Math.random();
     });
 
-    // Изгенерирај DOM елементи
+    // Изгенерирај елементи на DOM
     $(dizajni).each(function () {
 
         // Провери дали има посебно назначено име за thumbnail. Ако нема, земи го името на изворниот фајл за печатење.
@@ -57,6 +57,8 @@ $.get("json/dizajni.json").then(function (data) {
         $('.btn-group-designers').append('<option class="opt-designer">' + value + '</option>');
     });
 
+    // Филтрирај го прикажувањето на дизајните соодветно на направениот избор и врати ја видливоста на сите,
+    // во случај да е избрана опцијата за приказ на сите дизајни
     $('.btn-group-designers').change(function (event) {
 
         var dizajn_wrap = $('.dizajn-wrap');
@@ -73,5 +75,8 @@ $.get("json/dizajni.json").then(function (data) {
         if ($('.btn-group-designers option:selected').text() === 'Сите дизајнер(ки)') {
             dizajn_wrap.removeClass('hidden');
         }
+        
+        // Отстрани го фокусот од <select> за да биде појасно што се случува
+        $(this).blur();
     });
 });
