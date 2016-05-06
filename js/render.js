@@ -72,7 +72,7 @@ $.get("json/dizajni.json").then(function (data) {
             }
         });
 
-        if ($('.btn-group-designers option:selected').text() === 'Сите дизајнер(ки)') {
+        if ($('.btn-group-designers option:selected').text() === 'Сите автор(к)и') {
             dizajn_wrap.removeClass('hidden');
         }
         
