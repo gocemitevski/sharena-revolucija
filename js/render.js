@@ -62,20 +62,21 @@ $.get("json/dizajni.json").then(function (data) {
     $('.btn-group-designers').change(function (event) {
 
         var dizajn_wrap = $('.dizajn-wrap');
+        var dizajner_select = $('.btn-group-designers').val();
 
         dizajn_wrap.each(function () {
 
-            if ($(this).text() !== $('.btn-group-designers option:selected').text()) {
+            if ($(this).text() !== dizajner_select) {
                 $(this).addClass('hidden');
             } else {
                 $(this).removeClass('hidden');
             }
         });
 
-        if ($('.btn-group-designers option:selected').text() === 'Сите автор(к)и') {
+        if (dizajner_select === 'Сите автор(к)и') {
             dizajn_wrap.removeClass('hidden');
         }
-        
+
         // Отстрани го фокусот од <select> за да биде појасно што се случува
         $(this).blur();
     });
