@@ -1,3 +1,5 @@
+var default_select_value = $('.btn-group-designers').val();
+
 // Земи JSON и претвори го во објекти
 $.get("json/dizajni.json").then(function (data) {
     var dizajni = data['dizajni'];
@@ -57,27 +59,49 @@ $.get("json/dizajni.json").then(function (data) {
         $('.btn-group-designers').append('<option class="opt-designer">' + value + '</option>');
     });
 
+    // Провери дали е назначен хеш, па ако не е назначи го
+    if (window.location.hash.length < 1) {
+        window.location.hash = '/';
+    }
+
     // Филтрирај го прикажувањето на дизајните соодветно на направениот избор и врати ја видливоста на сите,
     // во случај да е избрана опцијата за приказ на сите дизајни
     $('.btn-group-designers').change(function (event) {
 
         var dizajn_wrap = $('.dizajn-wrap');
-        var dizajner_select = $('.btn-group-designers').val();
+        var select_value = $(this).val();
 
         dizajn_wrap.each(function () {
 
-            if ($(this).text() !== dizajner_select) {
-                $(this).addClass('hidden');
+            if (select_value !== default_select_value) {
+                if ($(this).text() === select_value) {
+                    $(this).removeClass('hidden');
+                } else {
+                    $(this).addClass('hidden');
+                }
             } else {
                 $(this).removeClass('hidden');
             }
+
         });
 
-        if (dizajner_select === 'Сите автор(к)и') {
-            dizajn_wrap.removeClass('hidden');
-        }
+        // Реформулирај хеш за приказ во URL
+        window.location.hash = '/' + select_value.replace(/\s/g, "-") + '/';
 
         // Отстрани го фокусот од <select> за да биде појасно што се случува
         $(this).blur();
     });
+});
+
+$(window).on('load hashchange', function () {
+
+    // Претвори хеш во име и презиме
+    var designer_hash = decodeURIComponent(this.location.hash.substr(2).replace(/-/g, " ")).replace(/\//g, "");
+
+    // Автоматски избери соодветна вредност од <select> освен кога се вчитува адресата без хеш
+    if (designer_hash.length > 1 && designer_hash !== default_select_value) {
+        $('.btn-group-designers').val(designer_hash).change();
+    } else {
+        this.location.hash = '/';
+    }
 });
