@@ -33,7 +33,7 @@
         {
             "ime": "nebojsa-galevski-sjo-logo-maica",
             "file_ext": "pdf",
-            "zasluga": "Небојша Галевски"
+            "zasluga": "Небојша Гелевски - Бане"
         },
         {
             "ime": "vane-kosturanov-sharena-revolucija-maica",
@@ -73,7 +73,7 @@
         {
             "ime": "nebojsa-galevski-sarena-revolucija-maica",
             "file_ext": "pdf",
-            "zasluga": "Небојша Галевски"
+            "zasluga": "Небојша Гелевски - Бане"
         },
         {
             "ime": "ruki-chuki-protestiram",
@@ -146,6 +146,11 @@
             "ime": "goran-atanasovski-protestiram",
             "file_ext": "psd",
             "zasluga": "Горан Атанасовски"
+        },
+        {
+            "ime": "zoran-kardula-star-sarenarevolucija",
+            "file_ext": "psd",
+            "zasluga": "Зоран Кардула"
         }
     ]
 }
