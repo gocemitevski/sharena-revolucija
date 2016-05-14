@@ -99,7 +99,9 @@ function update_hash(current_hash, default_hash) {
 // Проверува дали е назначен дизајнер во хеш и го избира од листата соодветно
 function select_designer_from_hash(default_select_value) {
   // Претвори хеш во име и презиме
-  var designer_hash = decodeURIComponent(window.location.hash.substr(2).replace(/-/g, " ")).replace(/\//g, "");
+  var designer_hash = decodeURIComponent(window.location.hash.substr(2).replace(/-/g, " ").replace(/\s{2,}/g, " - ")).replace(/\//g, "");
+
+  console.log(designer_hash);
 
   // Автоматски избери соодветна вредност од <select> освен кога се вчитува адресата без хеш
   if (designer_hash && designer_hash !== default_select_value) {
