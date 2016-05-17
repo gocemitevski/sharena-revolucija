@@ -166,6 +166,11 @@
             "ime": "zoran-kardula-bitola-maica-sharena-revolucija",
             "file_ext": "ai",
             "zasluga": "Зоран Кардула"
+        },
+		{
+            "ime": "goce-mitevski-nasmeano-vinozhito-sharena-revolucija",
+            "file_ext": "pdf",
+            "zasluga": "Гоце Митевски"
         }
     ]
 }
