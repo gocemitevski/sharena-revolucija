@@ -177,10 +177,15 @@
             "file_ext": "pdf",
             "zasluga": "Владимир Лукаш"
         },
-				{
+		{
             "ime": "zoran-kardula-maica-negotino-sharena-revolucija",
             "file_ext": "ai",
             "zasluga": "Зоран Кардула"
+        },
+		{
+            "ime": "vidana-boshkova-micevska-VidanaDeSign-maica-sharena-revolucija",
+            "file_ext": "tif",
+            "zasluga": "Видана Бошкова Мицевска"
         }
     ]
 }
