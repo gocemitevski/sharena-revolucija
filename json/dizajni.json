@@ -186,6 +186,16 @@
             "ime": "vidana-boshkova-micevska-VidanaDeSign-maica-sharena-revolucija",
             "file_ext": "tif",
             "zasluga": "Видана Бошкова Мицевска"
-        }
+        },
+		{
+            "ime": "zoran-kardula-sektash-sharena-revolucija",
+            "file_ext": "ai",
+            "zasluga": "Зоран Кардула"
+        },
+		{
+            "ime": "zoran-kardula-sektashka-sharena-revolucija",
+            "file_ext": "ai",
+            "zasluga": "Зоран Кардула"
+        }		
     ]
 }
