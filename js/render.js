@@ -48,7 +48,7 @@ $(document).ready(function () {
       var thumb_el = $(
               "<div class='dizajn-wrap'>" +
               "<a href='img/" + this.ime + "." + this.file_ext + "'>" +
-              "<img class='dizajn-thumb img-responsive' alt='" + this.ime + "' src='img/" + img_png + ".png'>" +
+              "<img class='dizajn-thumb img-responsive' alt='" + this.ime + "' src='img/" + img_png + "-300w.png'>" +
               "</a>" +
               "<h2 class='zasluga-title'>" + this.zasluga + "</h2>" +
               "</div>");
