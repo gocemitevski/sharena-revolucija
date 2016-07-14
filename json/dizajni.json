@@ -152,55 +152,60 @@
             "file_ext": "ai",
             "zasluga": "Зоран Кардула"
         },
-		{
+        {
             "ime": "zoran-kardula-maica-krushevo-sharena-revolucija-01",
             "file_ext": "psd",
             "zasluga": "Зоран Кардула"
         },
-		{
+        {
             "ime": "zoran-kardula-maica-krushevo-sharena-revolucija-02",
             "file_ext": "psd",
             "zasluga": "Зоран Кардула"
         },
-		{
+        {
             "ime": "zoran-kardula-bitola-maica-sharena-revolucija",
             "file_ext": "ai",
             "zasluga": "Зоран Кардула"
         },
-		{
+        {
             "ime": "goce-mitevski-nasmeano-vinozhito-sharena-revolucija",
             "file_ext": "pdf",
             "zasluga": "Гоце Митевски"
         },
-		{
+        {
             "ime": "vladimir-lukash-tupanica-logo-boi-raka",
             "file_ext": "pdf",
             "zasluga": "Владимир Лукаш"
         },
-		{
+        {
             "ime": "zoran-kardula-maica-negotino-sharena-revolucija",
             "file_ext": "ai",
             "zasluga": "Зоран Кардула"
         },
-		{
+        {
             "ime": "vidana-boshkova-micevska-VidanaDeSign-maica-sharena-revolucija",
             "file_ext": "tif",
             "zasluga": "Видана Бошкова Мицевска"
         },
-		{
+        {
             "ime": "zoran-kardula-sektash-sharena-revolucija",
             "file_ext": "ai",
             "zasluga": "Зоран Кардула"
         },
-		{
+        {
             "ime": "zoran-kardula-sektashka-sharena-revolucija",
             "file_ext": "ai",
             "zasluga": "Зоран Кардула"
         },
-		{
+        {
             "ime": "zoran-kardula-fatime-fetai-sharena-revolucija",
             "file_ext": "ai",
             "zasluga": "Зоран Кардула"
-        }		
+        },
+        {
+            "ime": "zoran-kardula-sram-policija-sharena-revolucija",
+            "file_ext": "ai",
+            "zasluga": "Зоран Кардула"
+        }
     ]
 }
