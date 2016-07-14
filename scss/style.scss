@@ -24,7 +24,7 @@ $basic-flex-width: $jumbotron-padding * 15;
 .site-title{
     margin-top: 0;
     text-transform: uppercase;
-    
+
     a{
         color: inherit;
     }
@@ -52,7 +52,7 @@ header{
 
     animation: 0.3s fadeIn ease-in-out;
     width: $basic-flex-width;
-    margin: $jumbotron-padding;   
+    margin: $jumbotron-padding;
 
     h2{
         font-size: $font-size-h4 - 3;
@@ -75,15 +75,18 @@ header{
 
 .dizajn-thumb{
     padding: $jumbotron-padding * 2;
+    max-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .pechatnici{
     @extend .dizajn-wrap;
 }
 
-.btn-group-designers{    
+.btn-group-designers{
     max-width: 50%;
-    margin: auto;    
+    margin: auto;
 }
 
 .share-buttons{
